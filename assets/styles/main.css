@@ -543,6 +543,10 @@
   .CTA-header {
     display: none;
   }
+  
+  .search-bar{
+    padding: 8px 12px;
+  }
 
   .hero-section {
     height: 480px;
