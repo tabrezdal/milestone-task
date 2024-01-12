@@ -27,10 +27,14 @@
         <div class="CTA-header">
           <div class="cta-btn-text">BOOK NOW</div>
         </div>
-        <div class="search-icon"><img class="navbar-icon" src="./assets/icons/search-icon.svg" alt="search icon" />
+        <div class="search-icon">
+          <img class="navbar-icon search show" id="search-icon" src="./assets/icons/search-icon.svg" alt="search icon" />
+          <img class="navbar-icon cross hide" id="cross-icon" src="./assets/icons/cross-icon.svg" alt="cross icon" />
         </div>
       </div>
     </div>
+    <div class="search-bar hide">
+      <input class="search-input" placeholder="Enter your search here"><img class="navbar-icon" src="./assets/icons/search-icon2.svg" alt="search icon" /></div>
     <div class="hero-section">
       <div class="hero-image-wrapper"></div>
       <div class="play-button">
@@ -58,15 +62,17 @@
         <p class="section-title">Add Your Powerful and inspiring h1 Here</p>
         <img class="separator" src="img/separator.svg" />
         <div class="description">
-          <p class="section-description">
+          <p class="section-description clipText">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
             mollit anim id est laborum.
           </p>
-          <div class="read-more-button"><img class="plus-btn" src="./assets/icons/read-more-button.svg"
+          <div class="read-more-button show"><img class="plus-btn" src="./assets/icons/read-more-button.svg"
               alt="plus icon" />
+              <img class="minus-btn hide" src="./assets/icons/read-less-button.svg"
+              alt="minus icon" />
           </div>
         </div>
       </div>
@@ -97,6 +103,9 @@
       </div>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
