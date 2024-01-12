@@ -1,0 +1,205 @@
+/* =================== CSS RESETING STARTS ====================== */
+
+/* 1. Removed default margin padding.
+2. Used more-intuitive box-sizing model. */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* 3. Added accessible line-height
+4. Improved text rendering */
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improved media defaults*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Removed built-in form typography styles*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* =================== CSS RESETING ENDS ====================== */
+
+/* =================== IMPORTING FONTS STARTS ====================== */
+
+/* Fonts Setting */
+@font-face {
+    font-family: Lora;
+    src: url("/assets/fonts/Lora-Regular.ttf") format("ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lora;
+    src: url("/assets/fonts/Lora-Medium.ttf") format("ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lora;
+    src: url("/assets/fonts/Lora-SemiBold.ttf") format("ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lora;
+    src: url("/assets/fonts/Lora-Bold.ttf") format("ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lora;
+    src: url("/assets/fonts/Lora-Italic.ttf") format("ttf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Lora;
+    src: url("/assets/fonts/Lora-MediumItalic.ttf") format("ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Lora;
+    src: url("/assets/fonts/Lora-SemiBoldItalic.ttf") format("ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Lora;
+    src: url("/assets/fonts/Lora-BoldItalic.ttf") format("ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: Museo Sans-100;
+    src: url("/assets/fonts/MuseoSans-100.otf") format("otf");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Museo Sans-100;
+    src: url("/assets/fonts/MuseoSans-100Italic.otf") format("otf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Museo Sans-300;
+    src: url("/assets/fonts/MuseoSans-300.otf") format("otf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Museo Sans-300;
+    src: url("/assets/fonts/MuseoSans-300Italic.otf") format("otf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Museo Sans-500;
+    src: url("/assets/fonts/MuseoSans_500.otf") format("otf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Museo Sans-500;
+    src: url("/assets/fonts/MuseoSans_500_Italic.otf") format("otf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Museo Sans-700;
+    src: url("/assets/fonts/MuseoSans_700.otf") format("otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Museo Sans-700;
+    src: url("/assets/fonts/MuseoSans-700Italic.otf") format("otf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Museo Sans-900;
+    src: url("/assets/fonts/MuseoSans_900.otf") format("otf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Museo Sans-900;
+    src: url("/assets/fonts/MuseoSans-900Italic.otf") format("otf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/* =================== IMPORTING FONTS STARTS ====================== */
+
+/* =================== CSS VARIABLES SETTING STARTS ====================== */
+
+:root {
+    --primary-color: #1E2744;
+    --secondary-color: #E84B46;
+    --primary-color-hover: #2b3761;
+    --primary-color-active: #182242;
+    --secondary-color-hover: #e63630;
+    --secondary-color-active: #cf443f;
+    --ternary-color-1: #28314E;
+    --black: #000000;
+    --white: #ffffff;
+    --section-padding-desktop: 0px 80px;
+    --section-padding-mobile: 0px 12px;
+}
+
+/* =================== CSS VARIABLES SETTING ENDS ====================== */
