@@ -516,17 +516,135 @@
 }
 
 .show {
-  display: block;
+  display: block !important;
 }
 
 .showFlex {
-  display: flex;
+  display: flex !important;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
+/* Mega Menu Starts*/
+.mega-menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 200px;
+  padding: 60px 280px;
+  position: relative;
+  background-image: url(../images/mega-menu-bg.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  min-height: 312px;
+}
+
+.mega-menu .mega-menu-links {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 0px 12px;
+  position: relative;
+}
+
+.mega-menu .mega-menu-link {
+  justify-content: space-between;
+  margin-right: -4px;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.mega-menu .mega-menu-link .link {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Museo Sans-700", Helvetica;
+  font-weight: 400;
+  color: var(--primary-color);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.mega-menu .mega-menu-link.active .link {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.mega-menu .mega-menu-link .link:hover{
+  color: var(--primary-color-hover);
+  font-weight: 600;
+}
+
+.mega-menu .mega-menu-link .link:hover + .chevron-icon{
+  transform: translateX(4px);
+}
+
+.mega-menu .context-wrapper .title {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Museo Sans-700", Helvetica;
+  font-weight: 400;
+  color: var(--ternary-color-1);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.mega-menu .chevron-icon {
+  position: relative;
+  width: 10.62px;
+  height: 17px;
+  margin-right: -2.12px;
+  transition: all 0.3s 0s;
+}
+
+.mega-menu .context {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 0px 12px;
+  position: relative;
+}
+
+.mega-menu .context-wrapper {
+  gap: 24px;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.mega-menu .section-description {
+  position: relative;
+  align-self: stretch;
+  font-family: "Museo Sans-500", Helvetica;
+  font-weight: 400;
+  color: #28314e;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  width: 100%;
+  text-align: left;
+}
+
+
+/* Mega Menu Ends */
 @media screen and (max-width:768px) {
   .nav-bar {
     align-items: center;
@@ -679,6 +797,27 @@
     position: relative;
     flex: 0 0 auto;
   }
+
+  .mega-menu {
+    padding: 20px 12px;
+    min-height: fit-content;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .mega-menu .mega-menu-links{
+    width: 100%;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 20px;
+  }
+
+  .mega-menu .mega-menu-link{
+    width: 100%;
+  }
+
+  .mega-menu .context{
+    width: 100%;
+  }
 }
 
 
@@ -727,6 +866,13 @@
 
   .footer-links {
     padding: 0px
+  }
+
+  .mega-menu {
+    padding: 20px 80px;
+    min-height: fit-content;
+    gap: 20px;
+    justify-content: space-between;
   }
 }
 
